@@ -43,7 +43,6 @@ Implement an anagram game as an interactive web in the
 “Ajax” style.  Javascript embedded in the web page will asynchronously
 interact with a web service in Flask.
 
-date:  
 week: 4
 topic: 
   Testing.  Data driven (table-driven) programs.  Refining

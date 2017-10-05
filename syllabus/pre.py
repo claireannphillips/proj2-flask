@@ -51,7 +51,17 @@ def process(raw):
                 entry = {}
             entry['topic'] = ""
             entry['project'] = ""
-            entry['week'] = content
+            date = base.shift(weeks = +(int(content)-1)).format('MM/DD/YYYY')
+            entry['week'] = "{} \n {}".format(content, date)
+            
+            
+            current = arrow.utcnow()
+            beginning = arrow.get(date, 'MM/DD/YYYY')
+            end = beginning.shift(days=+7)
+            if current >= beginning and current <= end:
+                entry['highlight'] = True
+            else:
+                entry['highlight'] = False
 
         elif field == 'topic' or field == 'project':
             entry[field] = content

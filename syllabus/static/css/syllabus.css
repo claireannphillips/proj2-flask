@@ -30,11 +30,18 @@ tr.even {
     background-color: rgb(224,213,179);
 }
 
+tr.highlight {
+    /* Highlight Row*/
+    background-color: rgb(200,102,140);
+}
+
+
 .class-schedule .week {
     
     font-weight: bolder;
     font-size: 150%; 
     text-align: center; 
+    if base.span('hour')
 }
 
 .class-schedule .topic {
