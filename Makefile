@@ -6,6 +6,7 @@
 SRC = syllabus
 SOURCES = $(SRC)/flask_syllabus.py $(SRC)/pre.py $(SRC)/credentials.ini
 
+SHELL = /bin/bash
 
 $(SRC)/credentials.ini:
 	echo "You must create credentials.ini and save it in $(SRC)"
